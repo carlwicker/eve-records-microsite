@@ -1,0 +1,49 @@
+[debug] [2024-04-05T18:10:12.899Z] ----------------------------------------------------------------------
+[debug] [2024-04-05T18:10:12.901Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carlw\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-05T18:10:12.901Z] CLI Version:   13.7.0
+[debug] [2024-04-05T18:10:12.901Z] Platform:      win32
+[debug] [2024-04-05T18:10:12.901Z] Node Version:  v20.12.1
+[debug] [2024-04-05T18:10:12.901Z] Time:          Fri Apr 05 2024 19:10:12 GMT+0100 (British Summer Time)
+[debug] [2024-04-05T18:10:12.902Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-05T18:10:12.957Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-05T18:10:12.957Z] > authorizing via signed-in user (carlwicker@gmail.com)
+[debug] [2024-04-05T18:10:12.957Z] [iam] checking project eve-records-microsite for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-05T18:10:12.959Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/eve-records-microsite:testIamPermissions [none]
+[debug] [2024-04-05T18:10:12.959Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/eve-records-microsite:testIamPermissions x-goog-quota-user=projects/eve-records-microsite
+[debug] [2024-04-05T18:10:12.959Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eve-records-microsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-05T18:10:13.218Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/eve-records-microsite:testIamPermissions 200
+[debug] [2024-04-05T18:10:13.219Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eve-records-microsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-05T18:10:13.219Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eve-records-microsite [none]
+[debug] [2024-04-05T18:10:13.495Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eve-records-microsite 200
+[debug] [2024-04-05T18:10:13.495Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eve-records-microsite {"projectId":"eve-records-microsite","projectNumber":"737448498973","displayName":"eve-records-microsite","name":"projects/eve-records-microsite","resources":{"hostingSite":"eve-records-microsite"},"state":"ACTIVE","etag":"1_62bdcf30-2355-4624-b793-cc8a1f1d14a8"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-05T18:10:22.274Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/eve-records-microsite/sites/eve-records-microsite [none]
+[debug] [2024-04-05T18:10:23.036Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/eve-records-microsite/sites/eve-records-microsite 200
+[debug] [2024-04-05T18:10:23.037Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/eve-records-microsite/sites/eve-records-microsite {"name":"projects/eve-records-microsite/sites/eve-records-microsite","defaultUrl":"https://eve-records-microsite.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'E:\Web Dev\eve-microsite\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'E:\\Web Dev\\eve-microsite\\.next\\trace'
+}
+
+[debug] [2024-04-05T18:10:29.585Z] Error: ENOENT: no such file or directory, open 'E:\Web Dev\eve-microsite\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

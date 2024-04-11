@@ -1,68 +1,84 @@
 export default function DemosPage() {
   return (
-    <div className="flex justify-end py-20">
-      <div className="w-1/2 flex flex-col gap-10 text-2xl leading-8 font-light">
-        <h1 className="font-bold text-6xl uppercase">Demos</h1>
+    <div className="flex justify-end">
+      <div className="w-1/2 flex flex-col gap-10 text-2xl leading-8 font-light py-60">
+        <h1 className="text-6xl font-bold p-4">Demo Submission Guidelines</h1>
+        <p className="text-3xl p-4">
+          We have a deep appreciation for new music and take pride in the fact
+          that many of our latest releases stem from demo submissions. To ensure
+          the smoothest process for both you and us, we kindly ask that you
+          adhere to a few simple guidelines:
+        </p>
 
-        <p>
-          We love new music and are proud to say that a significant number of
-          our new releases have come from demo submissions.
-        </p>
-        <p>
-          However, due to the sheer volume that we receive, we do ask that you
-          follow a few simple guidelines that will help get your music to us in
-          the best shape and the most convenient format.
-        </p>
-        <ol className="list-disc flex flex-col gap-5">
-          <li>
-            <b>DO NOT</b> send us work in progress. Unfortunately we simply do
-            not have the time to coax you through the production process - that
-            is what friends are for. When you think you have a great track or
-            idea, play it to others and get opinions that you trust as to
-            whether your music is of a high enough standard for release. If it
-            is, then send it over. If not, then keep working on it until it is.
+        <ol className="list-decimal list-inside">
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Quality Over Quantity:</strong> Please
+            refrain from submitting works in progress. While we value your
+            creative journey, our capacity doesn't allow us to provide extensive
+            production guidance. Share your music with trusted peers for
+            feedback before sending it our way. If it meets the mark, we're
+            eager to hear it.
           </li>
-          <li>
-            <b>DO NOT</b> send us more than 2 or 3 tracks. If we want more we
-            will ask, so send us your best work and if we like it, we will be in
-            touch.
+
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Concise Submissions:</strong> Limit
+            your submission to 2 or 3 tracks. If we're interested in more, we'll
+            reach out. Send us your finest work, and if it resonates with us,
+            we'll be sure to contact you.
           </li>
-          <li>
-            <b>DO NOT</b> attach files directly to emails. They clog up our
-            inbox and are deleted immediately. For submission requirements, see
-            below.
+
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Submission Format:</strong> Avoid
+            attaching files directly to emails, as they congest our inbox and
+            are promptly deleted. Refer to the submission requirements outlined
+            below for the preferred format.
           </li>
-          <li>
-            Include as much information as you can about yourself; previous
-            releases, web details, studio details and a phone number. This is
-            all useful information but please, no life stories! Be informative
-            and succinct!
+
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Comprehensive Information:</strong>{" "}
+            Include pertinent details about yourself, such as previous releases,
+            web presence, studio information, and a contact number. While we
+            appreciate context, please keep it concise and relevant.
           </li>
-          <li>
-            Try to keep your demos as exclusive as possible. If we sign your
-            release it will be with a view to selling as many units as possible
-            and our job is made much easier if the track isn't already all over
-            the Internet.
+
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Exclusivity:</strong> Aim to keep your
+            demos as exclusive as possible. If we choose to sign your release,
+            maximizing its sales potential becomes paramount. Thus, avoiding
+            widespread internet dissemination prior to submission greatly
+            facilitates our efforts.
+          </li>
+
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Submission Format:</strong> Initially,
+            please submit your tracks in streaming formats such as SoundCloud or
+            YouTube. This allows us to listen conveniently. If we're intrigued
+            by what we hear, we'll request a full-length 320 MP3. While we
+            strive to provide feedback on rejected tracks, please understand
+            that due to the volume of submissions, we may not be able to respond
+            to everyone promptly.
+          </li>
+
+          <li className="text-3xl p-4">
+            <strong className="font-bold">Patience and Persistence:</strong>{" "}
+            Given the volume of submissions we receive, it may take up to two
+            weeks for us to review your work. Kindly refrain from follow-ups
+            during this period, as it could inadvertently prolong the process.
           </li>
         </ol>
-        <p>
-          Initially, we now ask for all tracks to be submitted as SoundCloud,
-          YouTube, or any other streaming format. We can then click and listen
-          and if we like what we hear we will be in touch for a full length 320
-          MP3. Whilst we often give a small amount of feedback on track
-          rejections, we regret that we cannot reply to everyone or get involved
-          in lengthy dialogue, as we simply do not have the time. Due to the
-          large volume of demo submissions, we may not be able to respond or
-          listen to your work immediately - please allow at least two weeks
-          before 'chasing up' as this will only delay the process.
+
+        <p className="text-3xl p-4">
+          We appreciate your interest and eagerly anticipate the possibility of
+          collaborating with you in the future. Best of luck, and we eagerly
+          await hearing from you!
         </p>
-        <p>
-          Good luck – we look forward to hearing from you and hopefully working
-          with you in the future!
-        </p>
-        <p>
-          <a href="mailto:demos@recoverworld.com">demos@recoverworld.com</a>
-        </p>
+
+        <a
+          className="text-3xl p-4 text-red-900 hover:text-red-600 font-bold transition duration-300 ease-in-out"
+          href="mailto:demos@recoverworld.com"
+        >
+          demos@recoverworld.com
+        </a>
       </div>
     </div>
   );

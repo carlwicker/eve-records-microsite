@@ -1,28 +1,27 @@
 export default function AboutPage() {
   return (
-    <div className="flex justify-end py-40">
-      <div className="w-1/2 text-2xl flex gap-10 flex-col">
-        <h1 className="text-5xl leading-tight uppercase font-black">About</h1>
-        <p>
-          We are an established and continually expanding collection of record
-          labels, a publishing company, online record store, consultancy,
-          management and recording / mastering studio.
+    <div className="flex justify-end">
+      <div className="w-1/2 text-2xl flex gap-10 flex-col py-60">
+        <h1
+          className="text-6xl font-bold p-4"
+          data-scroll
+          data-scroll-speed="0.2"
+        >
+          Redefining the Sound of Tomorrow
+        </h1>
+        <p className="text-3xl p-4">
+          Embark on an unparalleled journey through the pulsating realms of
+          electronic music with us. Beyond being a record label, we are a
+          multifaceted powerhouse, encompassing record labels, a pioneering
+          publishing company, an immersive online record store, and
+          comprehensive consultancy services.
         </p>
-        <p>
-          Our past and present group of artists reads like a who's who of
-          credible dance music. It includes Pablo Gargano, John Askew, Jose
-          Amnesia, Sean Tyas, John O'Callaghan, Chris Hampshire and many more.
-        </p>
-        <p>
-          Our artists come from all over the world, including The Netherlands,
-          Australia, USA, Ireland and Russia giving Recoverworld a truly
-          international flavour.
-        </p>
-        <p>
-          Our music is licensed internationally and includes large scale
-          compilations via labels including Armada, Ministry of Sound, Sony,
-          Vandit and Warner Music as well as numerous credible underground
-          mixes.
+        <p className="text-3xl p-4">
+          Our commitment to excellence extends to artist management and top-tier
+          recording and mastering facilities, ensuring every sonic creation
+          reaches its fullest potential. With a focus on innovation and pushing
+          the boundaries of sound, we invite you to join us in shaping the
+          future of electronic music.
         </p>
       </div>
     </div>

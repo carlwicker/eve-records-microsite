@@ -1,36 +1,50 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+"use client";
+
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { Roboto } from "next/font/google";
-// import LocomotiveScroll from "locomotive-scroll";
 
-const inter = Inter({ subsets: ["latin"] });
+import { useEffect, useRef, useState } from "react";
+// Vendors
+import "../node_modules/locomotive-scroll/dist/locomotive-scroll.css";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "700"] });
-
-export const metadata: Metadata = {
-  title: "Eve Records",
-  description: "Eve Records is a record label based in the UK.",
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const scrollRef = useRef(null);
+  const [scroll, setScroll] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("locomotive-scroll").then((LocomotiveScroll) => {
+        const scrollInstance = new LocomotiveScroll.default({
+          el: scrollRef.current,
+          smooth: true,
+        });
+        setScroll(scrollInstance);
+      });
+    }
+
+    return () => {
+      if (scroll) scroll.destroy();
+    };
+  }, []);
+
   return (
-    <html
-      lang="en"
-      className={roboto.className}
-      style={{
-        backgroundImage: `url('img/forest.jpg')`,
-        backgroundSize: "bg-cover",
-      }}
-    >
-      <body className=" text-white container mx-auto">
-        <Navigation />
-        {children}
+    <html lang="en" className="bg-black">
+      <body className={roboto.className}>
+        <div
+          ref={scrollRef}
+          data-scroll-container
+          className="container mx-auto text-white"
+        >
+          <Navigation />
+          {children}
+        </div>
       </body>
     </html>
   );
