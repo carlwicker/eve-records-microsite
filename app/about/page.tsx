@@ -10,8 +10,15 @@ export default function AboutPage() {
             Embark on an unparalleled journey through the pulsating realms of
             electronic music with us. Beyond being a record label, we are a
             multifaceted powerhouse, encompassing record labels, a pioneering
-            publishing company, an immersive online record store, and
-            comprehensive consultancy services.
+            publishing company, an immersive{" "}
+            <a
+              href="https://store.recoverworld.com/store?search=&label=7"
+              target="_blank"
+              className="hover:text-red-600 transition text-red-400 duration-300 ease-in-out"
+            >
+              online record store
+            </a>
+            , and comprehensive consultancy services.
           </p>
           <p className="text-3xl">
             Our commitment to excellence extends to artist management and

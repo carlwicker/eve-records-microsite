@@ -7,6 +7,7 @@ import { Roboto } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 // Vendors
 import "../node_modules/locomotive-scroll/dist/locomotive-scroll.css";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "700"] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
