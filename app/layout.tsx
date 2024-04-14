@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const scrollRef = useRef(null);
-  const [scroll, setScroll] = useState(null);
+  const [scroll, setScroll] = useState<any>(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {

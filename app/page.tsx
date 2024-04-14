@@ -4,7 +4,7 @@ export default function Home() {
       <section className="flex w-full justify-end py-60">
         <div className="xl:w-1/2  align-middle flex flex-col self-center gap-8">
           <h1 className="text-6xl font-bold p-4">
-            Crafting Tomorrow's Anthems
+            Crafting Tomorrow`&apos;`s Anthems
           </h1>
           <p className="text-3xl p-4">
             Welcome to Eve Records, where innovation meets electronic

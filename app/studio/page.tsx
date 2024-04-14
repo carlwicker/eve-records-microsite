@@ -10,9 +10,9 @@ export default function StudioPage() {
         </p>
 
         <p className="text-3xl p-4">
-          Whether you're an emerging talent looking to refine your sound or a
-          seasoned artist seeking to push the boundaries of your creativity, our
-          client services have got you covered.
+          Whether you&apos;re an emerging talent looking to refine your sound or
+          a seasoned artist seeking to push the boundaries of your creativity,
+          our client services have got you covered.
         </p>
 
         <Image src="/img/studio.jpg" width={800} height={600} alt="Studio" />

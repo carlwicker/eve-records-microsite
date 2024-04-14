@@ -14,17 +14,17 @@ export default function DemosPage() {
           <li className="text-3xl p-4">
             <strong className="font-bold">Quality Over Quantity:</strong> Please
             refrain from submitting works in progress. While we value your
-            creative journey, our capacity doesn't allow us to provide extensive
-            production guidance. Share your music with trusted peers for
-            feedback before sending it our way. If it meets the mark, we're
-            eager to hear it.
+            creative journey, our capacity doesn`&apos;`t allow us to provide
+            extensive production guidance. Share your music with trusted peers
+            for feedback before sending it our way. If it meets the mark,
+            we`&apos;`re eager to hear it.
           </li>
 
           <li className="text-3xl p-4">
             <strong className="font-bold">Concise Submissions:</strong> Limit
-            your submission to 2 or 3 tracks. If we're interested in more, we'll
-            reach out. Send us your finest work, and if it resonates with us,
-            we'll be sure to contact you.
+            your submission to 2 or 3 tracks. If we`&apos;`re interested in
+            more, we`&apos;`ll reach out. Send us your finest work, and if it
+            resonates with us, we`&apos;`ll be sure to contact you.
           </li>
 
           <li className="text-3xl p-4">
@@ -52,11 +52,11 @@ export default function DemosPage() {
           <li className="text-3xl p-4">
             <strong className="font-bold">Submission Format:</strong> Initially,
             please submit your tracks in streaming formats such as SoundCloud or
-            YouTube. This allows us to listen conveniently. If we're intrigued
-            by what we hear, we'll request a full-length 320 MP3. While we
-            strive to provide feedback on rejected tracks, please understand
-            that due to the volume of submissions, we may not be able to respond
-            to everyone promptly.
+            YouTube. This allows us to listen conveniently. If we`&apos;`re
+            intrigued by what we hear, we`&apos;`ll request a full-length 320
+            MP3. While we strive to provide feedback on rejected tracks, please
+            understand that due to the volume of submissions, we may not be able
+            to respond to everyone promptly.
           </li>
 
           <li className="text-3xl p-4">
