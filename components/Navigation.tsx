@@ -5,28 +5,65 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["900"] });
 
 export default function Navigation() {
   return (
-    <div className="flex w-full justify-between py-10">
-      <div id="logo" className="uppercase text-2xl">
+    <div className="flex w-full flex-col">
+      <div id="logo" className="uppercase text-2xl mx-auto py-20">
         <Link href="/" className={roboto.className}>
           Eve Records
         </Link>
       </div>
-      <div id="nav" className="flex h-20 align-middle gap-4 text-sm">
-        <Link href="/about">About</Link>
-        <Link href="/digital">Digital</Link>
-
+      <div
+        id="nav"
+        className="flex gap-4 text-sm self-center font-extrabold uppercase "
+      >
+        <Link
+          href="/about"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
+        >
+          About
+        </Link>
+        |
         <a
           href="https://store.recoverworld.com/store?search=&label=7"
           target="_blank"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
         >
           MP3/WAV
         </a>
-
-        <Link href="/merchandise">Merchandise</Link>
-        <Link href="/demos">Demos</Link>
-        <Link href="/mastering">Mastering</Link>
-        <Link href="/studio">Studio</Link>
-        <Link href="/contact">Contact</Link>
+        |
+        <Link
+          href="/merchandise"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
+        >
+          Merchandise
+        </Link>
+        |
+        <Link
+          href="/demos"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
+        >
+          Demos
+        </Link>
+        |
+        <Link
+          href="/mastering"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
+        >
+          Mastering
+        </Link>
+        |
+        <Link
+          href="/studio"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
+        >
+          Studio
+        </Link>
+        |
+        <Link
+          href="/contact"
+          className="hover:text-red-400 transition duration-500 ease-in-out"
+        >
+          Contact
+        </Link>
       </div>
     </div>
   );

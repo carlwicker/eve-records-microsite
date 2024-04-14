@@ -40,7 +40,7 @@ export default function RootLayout({
         <div
           ref={scrollRef}
           data-scroll-container
-          className="container mx-auto text-white"
+          className="container mx-auto text-white p-5"
         >
           <Navigation />
           {children}
