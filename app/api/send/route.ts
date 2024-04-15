@@ -1,12 +1,11 @@
-"use server";
-
 import type { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 import { EmailTemplate } from "../../../components/EmailTemplate";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API);
 
-export async function POST() {
+export async function GET() {
   try {
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
@@ -15,12 +14,14 @@ export async function POST() {
       html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
     });
 
+    console.log({ data });
+
     if (error) {
-      return Response.json({ error });
+      return NextResponse.json({ error });
     }
 
-    return Response.json({ data });
+    return NextResponse.json({ data });
   } catch (error) {
-    return Response.json({ error });
+    return NextResponse.json({ error });
   }
 }
