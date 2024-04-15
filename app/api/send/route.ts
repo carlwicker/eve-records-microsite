@@ -3,15 +3,15 @@ import { NextResponse } from "next/server";
 import { EmailTemplate } from "../../../components/EmailTemplate";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API);
-
 export async function GET() {
+  const resend = new Resend(process.env.RESEND_API);
+
   try {
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "carlwicker@gmail.com",
-      subject: "Hello World",
-      html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
+      subject: "Eve Records Website Contacat Form",
+      html: "<p>Message</p>",
     });
 
     console.log({ data });

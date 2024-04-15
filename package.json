@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@next/font": "^14.1.4",
+    "@react-email/components": "^0.0.16",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "locomotive-scroll": "^5.0.0-beta.11",
     "next": "14.1.4",

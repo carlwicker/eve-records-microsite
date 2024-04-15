@@ -1,11 +1,18 @@
-"use client";
-
 import { Resend } from "resend";
 
 export default function ContactPage() {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    console.log("Form submitted");
+    "use server";
+    const resend = new Resend(process.env.RESEND_API);
+
+    const { data, error } = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "carlwicker@gmail.com",
+      subject: "Eve Records Website Contacat Form",
+      html: "<p>Message</p>",
+    });
+
+    console.log(data, error);
   }
 
   return (
