@@ -1,10 +1,19 @@
+"use client";
+
+import { Resend } from "resend";
+
 export default function ContactPage() {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    console.log("Form submitted");
+  }
+
   return (
     <div className="py-32">
       <section className="flex w-full justify-center">
         <div className="w-2/3  align-middle flex flex-col self-center gap-8">
           <h1 className="font-bold text-6xl uppercase">Contact</h1>
-          <form className="flex flex-col gap-4">
+          <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Name"

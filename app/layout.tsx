@@ -9,6 +9,8 @@ import { useEffect, useRef, useState } from "react";
 import "../node_modules/locomotive-scroll/dist/locomotive-scroll.css";
 import Footer from "@/components/Footer";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "700"] });
 
 export default function RootLayout({
@@ -38,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black">
       <body className={roboto.className}>
+        <SpeedInsights />
         <div
           ref={scrollRef}
           data-scroll-container
