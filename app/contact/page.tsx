@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, use, useState, RefObject } from "react";
+import { useRef, RefObject } from "react";
 
 export default function ContactPage() {
   const nameRef = useRef(null) as RefObject<HTMLInputElement>;
@@ -38,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div className="w-full">
               <textarea
-                className="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-gray-200 text-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 ref={messageRef}
                 name="message"
                 placeholder="Message"
