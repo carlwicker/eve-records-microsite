@@ -33,7 +33,7 @@ export default function RootLayout({
     return () => {
       if (scroll) scroll.destroy();
     };
-  }, []);
+  }, [scroll]);
 
   return (
     <html lang="en" className="bg-black">

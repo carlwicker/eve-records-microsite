@@ -1,9 +1,11 @@
+"use client";
+
 import { useRef, useEffect, use, useState, RefObject } from "react";
 
 export default function ContactPage() {
-  const nameRef = useRef<HTMLInputElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const messageRef = useRef<HTMLTextAreaElement>(null);
+  const nameRef = useRef(null) as RefObject<HTMLInputElement>;
+  const emailRef = useRef(null) as RefObject<HTMLInputElement>;
+  const messageRef = useRef(null) as RefObject<HTMLTextAreaElement>;
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
