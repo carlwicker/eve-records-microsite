@@ -85,7 +85,7 @@ export default function MasteringPage() {
             <div className="text-3xl flex flex-col gap-5">
               <b>How should I prepare my tracks before uploading?</b>
               <p>For optimal results, follow these 3 steps:</p>
-              <ol className="list-decimal flex flex-col">
+              <ol className="list-decimal flex flex-col p-10">
                 <li>Make sure your mix doesn't peak above 0dBFS.</li>
                 <li>
                   Remove all limiters and other mastering plugins from your
@@ -124,8 +124,8 @@ export default function MasteringPage() {
 
             <div className="text-3xl flex flex-col gap-5">
               <b>I have a question, who can I contact?</b>
-              <p className="">
-                For any questions specific to mastering, please contact{""}
+              <p>
+                For any questions specific to mastering, please contact{" "}
                 <a
                   href="mailto:recoverworld-support@masterchannel.ai"
                   className="hover:text-red-600 transition text-red-400 duration-300 ease-in-out"
