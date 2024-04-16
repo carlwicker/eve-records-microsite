@@ -8,9 +8,9 @@ export default function ContactPage() {
   const messageRef = useRef("");
 
   const [message, setMessage] = useState({
-    name: nameRef.current.value,
-    email: emailRef.current.value,
-    message: messageRef.current.value,
+    name: nameRef.current,
+    email: emailRef.current,
+    message: messageRef.current,
   });
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
