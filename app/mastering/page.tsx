@@ -86,7 +86,7 @@ export default function MasteringPage() {
               <b>How should I prepare my tracks before uploading?</b>
               <p>For optimal results, follow these 3 steps:</p>
               <ol className="list-decimal flex flex-col p-10">
-                <li>Make sure your mix doesn't peak above 0dBFS.</li>
+                <li>Make sure your mix doesn&apos;t peak above 0dBFS.</li>
                 <li>
                   Remove all limiters and other mastering plugins from your
                   master bus.
