@@ -18,7 +18,7 @@ export default function ContactPage() {
           <div className="flex flex-wrap mb-6">
             <div className="w-full ">
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="w-full bg-gray-200 text-gray-700  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 ref={nameRef}
                 type="text"
                 name="name"
@@ -28,7 +28,7 @@ export default function ContactPage() {
             </div>
             <div className="w-full">
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className=" w-full bg-gray-200 text-gray-700  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 ref={emailRef}
                 type="email"
                 name="email"
@@ -38,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div className="w-full">
               <textarea
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 ref={messageRef}
                 name="message"
                 placeholder="Message"
