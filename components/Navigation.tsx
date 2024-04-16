@@ -30,12 +30,13 @@ export default function Navigation() {
           MP3/WAV
         </a>
         |
-        <Link
-          href="/merchandise"
+        <a
+          href="https://recoverworld.teemill.com"
+          target="_blank"
           className="hover:text-red-400 transition duration-500 ease-in-out"
         >
           Merchandise
-        </Link>
+        </a>
         |
         <Link
           href="/demos"

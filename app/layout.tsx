@@ -3,12 +3,9 @@
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { Roboto } from "next/font/google";
-
 import { useEffect, useRef, useState } from "react";
-// Vendors
 import "../node_modules/locomotive-scroll/dist/locomotive-scroll.css";
 import Footer from "@/components/Footer";
-
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 

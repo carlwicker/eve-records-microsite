@@ -1,49 +1,67 @@
-import { Resend } from "resend";
+"use client";
+
+import { useRef, useEffect, use, useState } from "react";
 
 export default function ContactPage() {
+  const nameRef = useRef("");
+  const emailRef = useRef("");
+  const messageRef = useRef("");
+
+  const [message, setMessage] = useState({
+    name: nameRef.current.value,
+    email: emailRef.current.value,
+    message: messageRef.current.value,
+  });
+
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    "use server";
-    const resend = new Resend(process.env.RESEND_API);
-
-    const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "carlwicker@gmail.com",
-      subject: "Eve Records Website Contacat Form",
-      html: "<p>Message</p>",
-    });
-
-    console.log(data, error);
+    event.preventDefault();
   }
 
   return (
     <div className="py-32">
       <section className="flex w-full justify-center">
-        <div className="w-2/3  align-middle flex flex-col self-center gap-8">
-          <h1 className="font-bold text-6xl uppercase">Contact</h1>
-          <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Name"
-              className="border border-gray-300 p-2 text-black font-bold"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="border border-gray-300 p-2 text-black font-bold"
-            />
-            <textarea
-              placeholder="Message"
-              className="border border-gray-300 p-2 text-black font-bold"
-              rows={4}
-            />
-            <button
-              type="submit"
-              className="bg-blue-400 hover:bg-blue-600 font-bold transition duration-300 text-white py-2 px-4 rounded"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+        <form className="w-full" onSubmit={handleSubmit}>
+          <div className="flex flex-wrap mb-6">
+            <div className="w-full ">
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                ref={nameRef}
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div className="w-full">
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                ref={emailRef}
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div className="w-full">
+              <textarea
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                ref={messageRef}
+                name="message"
+                placeholder="Message"
+                rows={7}
+                required
+              />
+            </div>
+            <div className="w-full">
+              <button
+                type="submit"
+                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
     </div>
   );
