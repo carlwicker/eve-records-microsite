@@ -4,10 +4,12 @@ export default function MasteringPage() {
   return (
     <div className="py-32">
       <section className="flex w-full justify-center flex-col">
-        <div className="w-2/3 align-middle flex flex-col self-center gap-8">
+        <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
           <h1 className="text-6xl font-bold uppercase">Mastering</h1>
 
-          <p className="text-3xl">Get a free preview of your mastered track</p>
+          <p className="text-3xl">
+            Get a free preview of your mastered track...
+          </p>
 
           <div className="pt-40">
             <iframe
@@ -23,7 +25,7 @@ export default function MasteringPage() {
             ></iframe>
           </div>
 
-          <div className="flex flex-col gap-12 items-center py-40 text-2xl">
+          <div className="flex flex-col gap-12 items-center py-40 md:text-2xl text-center">
             <h2 className="font-bold text-4xl uppercase ">
               Why master your music?
             </h2>

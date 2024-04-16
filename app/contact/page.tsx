@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, RefObject } from "react";
+import { Metadata } from "next";
 
 export default function ContactPage() {
   const nameRef = useRef(null) as RefObject<HTMLInputElement>;
