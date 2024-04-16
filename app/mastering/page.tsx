@@ -25,36 +25,39 @@ export default function MasteringPage() {
             ></iframe>
           </div>
 
-          <div className="flex flex-col gap-12 items-center py-40 md:text-2xl text-center">
+          <div className="flex flex-col gap-12 items-center py-40 md:text-2xl text-xl text-center">
             <h2 className="font-bold text-4xl uppercase ">
               Why master your music?
             </h2>
-            <div className="flex flex-col items-center gap-2">
-              <h3>
-                <FaUserLarge size={"3rem"} />
-              </h3>
-              <p>Sound good on any device: speakers, headphones or radio</p>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <h3>
-                <FaDeezer size={"3rem"} />
-              </h3>
-              <p>Optimised for streaming platforms</p>
-            </div>
-            <div className="flex flex-col items-center gap-2 ">
-              <h3>
-                <FaFileArrowDown size={"3rem"} />
-              </h3>
-              <p>Leave the technical headache to us and focus on creating</p>
+
+            <div className="flex gap-10 py-10 xl:flex-row flex-col">
+              <div className="flex flex-col  items-center gap-2">
+                <h3>
+                  <FaUserLarge size={"3rem"} />
+                </h3>
+                <p>Sound good on any device: speakers, headphones or radio</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <h3>
+                  <FaDeezer size={"3rem"} />
+                </h3>
+                <p>Optimised for streaming platforms</p>
+              </div>
+              <div className="flex flex-col items-center gap-2 ">
+                <h3>
+                  <FaFileArrowDown size={"3rem"} />
+                </h3>
+                <p>Leave the technical headache to us and focus on creating</p>
+              </div>
             </div>
           </div>
 
-          <div className="text-3xl flex flex-col gap-20">
+          <div className="flex flex-col gap-20">
             <h4 className="font-bold text-3xl uppercase">
               Frequently Asked Questions
             </h4>
 
-            <div className="text-3xl flex flex-col gap-5">
+            <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>Who is this for?</b>
 
               <p>
@@ -66,7 +69,7 @@ export default function MasteringPage() {
               </p>
             </div>
 
-            <div className="text-3xl flex flex-col gap-5">
+            <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>Why use AI to master my tracks?</b>
               <p>
                 Historically, mastering has been the domain of highly skilled
@@ -84,7 +87,7 @@ export default function MasteringPage() {
               </p>
             </div>
 
-            <div className="text-3xl flex flex-col gap-5">
+            <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>How should I prepare my tracks before uploading?</b>
               <p>For optimal results, follow these 3 steps:</p>
               <ol className="list-decimal flex flex-col p-10">
@@ -101,7 +104,7 @@ export default function MasteringPage() {
               </ol>
             </div>
 
-            <div className="text-3xl flex flex-col gap-5">
+            <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>Is this free to try?</b>
               <p>
                 Yes, you can upload and test the mastering tool with as many
@@ -112,7 +115,7 @@ export default function MasteringPage() {
               </p>
             </div>
 
-            <div className="text-3xl flex flex-col gap-5">
+            <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>How do I pay for it?</b>
               <p>
                 You can upload and test the mastering tool with as many tracks
@@ -124,7 +127,7 @@ export default function MasteringPage() {
               </p>
             </div>
 
-            <div className="text-3xl flex flex-col gap-5">
+            <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>I have a question, who can I contact?</b>
               <p>
                 For any questions specific to mastering, please contact{" "}

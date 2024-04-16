@@ -35,7 +35,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics />
         <div className="container mx-auto text-white p-5">
-          <Navigation />
+          {/* <Navigation /> */}
           {children}
           <Footer />
         </div>
