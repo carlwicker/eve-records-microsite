@@ -17,8 +17,10 @@ export default function ContactPage() {
     console.log(formData);
   }, [formData]);
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    console.log("THIS:", JSON.stringify(formData));
 
     try {
       const response = await fetch("https://everecords.co.uk/api/send", {
@@ -31,7 +33,7 @@ export default function ContactPage() {
 
       if (response.ok) {
         // Handle successful response
-        console.log("Form submitted successfully");
+        console.log("Form submitted successfully", formData);
       } else {
         // Handle error response
         console.error("Failed to submit form");
