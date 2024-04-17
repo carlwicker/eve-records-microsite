@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API);
 
-export async function POST() {
+export async function POST(request: Request) {
   try {
     const data = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
@@ -13,8 +13,8 @@ export async function POST() {
       text: "Hello world",
     });
 
-    return Response.json({ data });
+    return new Response(JSON.stringify({ data }), { status: 200 });
   } catch (error) {
-    return Response.json({ error });
+    return new Response(JSON.stringify({ error }), { status: 500 });
   }
 }
