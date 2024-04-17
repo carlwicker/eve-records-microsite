@@ -1,21 +1,61 @@
 "use client";
 
-import { useRef, RefObject } from "react";
-import { Metadata } from "next";
+import { useRef, RefObject, useEffect, useState } from "react";
 
 export default function ContactPage() {
   const nameRef = useRef(null) as RefObject<HTMLInputElement>;
   const emailRef = useRef(null) as RefObject<HTMLInputElement>;
   const messageRef = useRef(null) as RefObject<HTMLTextAreaElement>;
 
+  const [formData, setFormData] = useState({
+    name: nameRef.current?.value || "",
+    email: emailRef.current?.value || "",
+    message: messageRef.current?.value || "",
+  });
+
+  useEffect(() => {
+    console.log(formData, nameRef.current?.value);
+  }, [formData, nameRef.current?.value]);
+
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    try {
+      const response = await fetch("https://everecords.co.uk/api/send", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.ok) {
+        // Handle successful response
+        console.log("Form submitted successfully");
+      } else {
+        // Handle error response
+        console.error("Failed to submit form");
+      }
+    } catch (error) {
+      // Handle network error
+      console.error("Network error occurred", error);
+    }
   }
 
   return (
     <div className="py-32">
       <section className="flex w-full justify-center">
-        <form className="w-full" onSubmit={handleSubmit}>
+        <form
+          className="w-full"
+          onSubmit={handleSubmit}
+          onChange={() => {
+            setFormData({
+              name: nameRef.current?.value || "",
+              email: emailRef.current?.value || "",
+              message: messageRef.current?.value || "",
+            });
+          }}
+        >
           <div className="flex flex-wrap mb-6">
             <div className="w-full ">
               <input
