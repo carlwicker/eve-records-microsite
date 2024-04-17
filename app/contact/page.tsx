@@ -14,8 +14,8 @@ export default function ContactPage() {
   });
 
   useEffect(() => {
-    console.log(formData, nameRef.current?.value);
-  }, [formData, nameRef.current?.value]);
+    console.log(formData);
+  }, [formData]);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
