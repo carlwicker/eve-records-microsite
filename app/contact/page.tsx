@@ -46,10 +46,10 @@ export default function ContactPage() {
 
   return (
     <div className="py-32">
-      <section className="flex w-full">
-        <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
+      <section className="flex w-full justify-center">
+        <div className="xl:w-2/3 w-full align-middle flex flex-col gap-8">
           <form
-            className="w-full lg:w-2/3 self-center"
+            className="w-full  "
             onSubmit={handleSubmit}
             onChange={() => {
               setFormData({
@@ -59,7 +59,7 @@ export default function ContactPage() {
               });
             }}
           >
-            <div className="flex flex-wrap mb-6">
+            <div className="flex flex-wrap mb-6 ">
               <div className="w-full ">
                 <input
                   className="w-full bg-gray-200 text-gray-700  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
