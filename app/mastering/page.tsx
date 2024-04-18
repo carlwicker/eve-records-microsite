@@ -1,16 +1,22 @@
 import { FaUserLarge, FaDeezer, FaFileArrowDown } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function MasteringPage() {
   return (
     <div className="pb-16 pt-32">
       <section className="flex w-full justify-center flex-col">
         <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
-          <h1 className="lg:text-6xl text-4xl font-bold uppercase">
-            Mastering
-          </h1>
+          <h1 className="md:text-6xl text-4xl font-light pb-16">Mastering</h1>
 
           <p className="md:text-3xl text-xl">
-            Get a free preview of your mastered track...
+            Get a free preview of your AI mastered track, or use our{" "}
+            <Link
+              href="./studio"
+              className="text-red-500 hover:text-red-600 transition duration-100"
+            >
+              bespoke studio services
+            </Link>{" "}
+            to take your music to the next level.
           </p>
 
           <div className="md:pt-40 pt-20">
@@ -135,7 +141,7 @@ export default function MasteringPage() {
                 For any questions specific to mastering, please contact{" "}
                 <a
                   href="mailto:recoverworld-support@masterchannel.ai"
-                  className="hover:text-red-600 transition text-red-400 duration-300 ease-in-out"
+                  className="hover:text-red-500 transition text-red-400 duration-100 ease-in-out"
                 >
                   recoverworld-support@masterchannel.ai
                 </a>

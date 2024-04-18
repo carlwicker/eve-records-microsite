@@ -26,7 +26,7 @@ export default function Navigation() {
               setMobileNavOpen(!mobileNavOpen);
               console.log(mobileNavOpen);
             }}
-            className="hover:text-red-400 text-white transition duration-300 ease-in-out cursor-pointer"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
           />
         </div>
 
@@ -36,7 +36,7 @@ export default function Navigation() {
         >
           <Link
             href="/about"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
             onClick={() => setMobileNavOpen(false)}
           >
             About
@@ -45,7 +45,7 @@ export default function Navigation() {
           <a
             href="https://store.recoverworld.com/store?search=&label=7"
             target="_blank"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
           >
             MP3/WAV
           </a>
@@ -53,14 +53,14 @@ export default function Navigation() {
           <a
             href="https://recoverworld.teemill.com"
             target="_blank"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
           >
             Merchandise
           </a>
           <div className="hidden md:block">|</div>
           <Link
             href="/demos"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
             onClick={() => setMobileNavOpen(false)}
           >
             Demos
@@ -68,7 +68,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/mastering"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
             onClick={() => setMobileNavOpen(false)}
           >
             Mastering
@@ -76,7 +76,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/studio"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
             onClick={() => setMobileNavOpen(false)}
           >
             Studio
@@ -84,7 +84,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/contact"
-            className="hover:text-red-400 transition duration-500 ease-in-out"
+            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
             onClick={() => setMobileNavOpen(false)}
           >
             Contact

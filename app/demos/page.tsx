@@ -3,7 +3,7 @@ export default function DemosPage() {
     <div className="pb-16 pt-32">
       <section className="flex w-full justify-center">
         <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
-          <h1 className="lg:text-6xl text-4xl font-bold uppercase">
+          <h1 className="md:text-6xl text-4xl font-light pb-16">
             Demo Submission Guidelines
           </h1>
           <p className="md:text-3xl text-xl">
@@ -78,9 +78,9 @@ export default function DemosPage() {
 
           <a
             className="md:text-3xl text-xl py-20 text-red-900 hover:text-red-600 font-bold transition duration-300 ease-in-out"
-            href="mailto:demos@recoverworld.com"
+            href="mailto:demos@everecords.co.uk"
           >
-            demos@recoverworld.com
+            demos@everecords.co.uk
           </a>
         </div>
       </section>

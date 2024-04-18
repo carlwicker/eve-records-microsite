@@ -3,7 +3,7 @@ export default function AboutPage() {
     <div className="pb-16 pt-32">
       <section className="flex w-full justify-center">
         <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
-          <h1 className="lg:text-6xl text-4xl font-bold uppercase">
+          <h1 className="md:text-6xl text-4xl font-light pb-16 ">
             Redefining the Sound of Tomorrow
           </h1>
           <p className="md:text-3xl text-xl">
@@ -14,7 +14,7 @@ export default function AboutPage() {
             <a
               href="https://store.recoverworld.com/store?search=&label=7"
               target="_blank"
-              className="hover:text-red-600 transition text-red-400 duration-300 ease-in-out"
+              className="hover:text-red-600 transition text-red-500 duration-100 ease-in-out"
             >
               online record store
             </a>
