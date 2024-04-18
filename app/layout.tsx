@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
-import Head from "next/head";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "700"] });
 
@@ -25,12 +24,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-black">
-      <Head>
-        <title>Your Website Title</title>
-        <meta name="description" content="Your website description" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <body className={roboto.className}>
         <SpeedInsights />
         <Analytics />

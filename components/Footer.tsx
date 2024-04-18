@@ -5,33 +5,54 @@ import { SiFacebook } from "react-icons/si";
 import Link from "next/link";
 
 export default function Footer() {
+  type IconLinkProps = {
+    href: string;
+    title: string;
+    children: React.ReactNode;
+  };
+
+  const IconLink = ({ href, title, children }: IconLinkProps) => (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={title}
+      className="icon-link"
+    >
+      {children}
+    </Link>
+  );
+
   return (
     <div className="py-10">
       <section className="flex w-full justify-center">
-        <div className="w-2/3  align-middle justify-center flex self-center gap-3">
-          <Link
+        <div className="w-2/3 align-middle justify-center flex self-center gap-3">
+          <IconLink
+            title="Beatport"
             href="https://www.beatport.com/label/eve-records/4320"
-            target="_blank"
           >
             <SiBeatport
-              style={{ height: "40px", width: "40px" }}
-              className="hover:text-blue-300 transition-all duration-100 ease-in-out cursor-pointer"
+              size={"2em"}
+              className="text-white hover:text-blue-300"
             />
-          </Link>
+          </IconLink>
 
-          <Link href="https://www.instagram.com/eve.records" target="_blank">
+          <IconLink
+            title="Instagram"
+            href="https://www.instagram.com/eve.records"
+          >
             <RiInstagramLine
-              style={{ height: "40px", width: "40px" }}
-              className="hover:text-blue-300 transition-all duration-100 ease-in-out cursor-pointer"
+              size={"2em"}
+              className="text-white hover:text-blue-300"
             />
-          </Link>
+          </IconLink>
 
-          <Link href="https://www.facebook.com/EveRecords" target="_blank">
+          <IconLink title="Facebook" href="https://www.facebook.com/EveRecords">
             <SiFacebook
-              style={{ height: "40px", width: "40px" }}
-              className="hover:text-blue-300 transition-all duration-100 ease-in-out cursor-pointer"
+              size={"2em"}
+              className="text-white hover:text-blue-300"
             />
-          </Link>
+          </IconLink>
         </div>
       </section>
     </div>
