@@ -45,7 +45,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="py-32">
+    <div className="pb-16 pt-32">
       <section className="flex w-full justify-center">
         <div className="xl:w-2/3 w-full align-middle flex flex-col gap-8">
           <form

@@ -2,7 +2,7 @@ import { FaUserLarge, FaDeezer, FaFileArrowDown } from "react-icons/fa6";
 
 export default function MasteringPage() {
   return (
-    <div className="py-32">
+    <div className="pb-16 pt-32">
       <section className="flex w-full justify-center flex-col">
         <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
           <h1 className="lg:text-6xl text-4xl font-bold uppercase">
