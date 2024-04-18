@@ -46,7 +46,6 @@ export default function Navigation() {
             href="https://store.recoverworld.com/store?search=&label=7"
             target="_blank"
             className="hover:text-red-400 transition duration-500 ease-in-out"
-            onClick={() => setMobileNavOpen(false)}
           >
             MP3/WAV
           </a>
@@ -62,6 +61,7 @@ export default function Navigation() {
           <Link
             href="/demos"
             className="hover:text-red-400 transition duration-500 ease-in-out"
+            onClick={() => setMobileNavOpen(false)}
           >
             Demos
           </Link>
