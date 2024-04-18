@@ -4,12 +4,17 @@ import Link from "next/link";
 import { Roboto } from "next/font/google";
 import { useState, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { usePathname } from "next/navigation";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["900"] });
 
 export default function Navigation() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const navRef = useRef(null);
+  const pathname = usePathname();
+  const [isActive, setIsActive] = useState(false);
+
+  console.log(pathname);
 
   return (
     <div>
@@ -36,7 +41,7 @@ export default function Navigation() {
         >
           <Link
             href="/about"
-            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
+            className={`${pathname === "/about" ? "text-blue-300" : "text-white"} duration-100 ease-in-out cursor-pointer hover:text-red-600`}
             onClick={() => setMobileNavOpen(false)}
           >
             About
@@ -60,7 +65,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/demos"
-            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
+            className={`${pathname === "/demos" ? "text-blue-300" : "text-white"} duration-100 ease-in-out cursor-pointer hover:text-red-600`}
             onClick={() => setMobileNavOpen(false)}
           >
             Demos
@@ -68,7 +73,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/mastering"
-            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
+            className={`${pathname === "/mastering" ? "text-blue-300" : "text-white"} duration-100 ease-in-out cursor-pointer hover:text-red-600`}
             onClick={() => setMobileNavOpen(false)}
           >
             Mastering
@@ -76,7 +81,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/studio"
-            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
+            className={`${pathname === "/studio" ? "text-blue-300" : "text-white"} duration-100 ease-in-out cursor-pointer hover:text-red-600`}
             onClick={() => setMobileNavOpen(false)}
           >
             Studio
@@ -84,7 +89,7 @@ export default function Navigation() {
           <div className="hidden md:block">|</div>
           <Link
             href="/contact"
-            className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
+            className={`${pathname === "/contact" ? "text-blue-300" : "text-white"} duration-100 ease-in-out cursor-pointer hover:text-red-600`}
             onClick={() => setMobileNavOpen(false)}
           >
             Contact

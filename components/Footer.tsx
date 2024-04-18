@@ -15,21 +15,21 @@ export default function Footer() {
           >
             <SiBeatport
               style={{ height: "40px", width: "40px" }}
-              className="hover:text-red-600 transition-all duration-100 ease-in-out cursor-pointer"
+              className="hover:text-blue-300 transition-all duration-100 ease-in-out cursor-pointer"
             />
           </Link>
 
           <Link href="https://www.instagram.com/eve.records" target="_blank">
             <RiInstagramLine
               style={{ height: "40px", width: "40px" }}
-              className="hover:text-red-600 transition-all duration-100 ease-in-out cursor-pointer"
+              className="hover:text-blue-300 transition-all duration-100 ease-in-out cursor-pointer"
             />
           </Link>
 
           <Link href="https://www.facebook.com/EveRecords" target="_blank">
             <SiFacebook
               style={{ height: "40px", width: "40px" }}
-              className="hover:text-red-600 transition-all duration-100 ease-in-out cursor-pointer"
+              className="hover:text-blue-300 transition-all duration-100 ease-in-out cursor-pointer"
             />
           </Link>
         </div>
