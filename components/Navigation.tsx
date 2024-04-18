@@ -12,9 +12,6 @@ export default function Navigation() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const navRef = useRef(null);
   const pathname = usePathname();
-  const [isActive, setIsActive] = useState(false);
-
-  console.log(pathname);
 
   return (
     <div>
@@ -29,7 +26,6 @@ export default function Navigation() {
             size={"2rem"}
             onClick={() => {
               setMobileNavOpen(!mobileNavOpen);
-              console.log(mobileNavOpen);
             }}
             className="hover:text-red-600 text-white transition duration-100 ease-in-out cursor-pointer"
           />

@@ -60,7 +60,7 @@ export default function MasteringPage() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-8">
             <h4 className="font-bold text-3xl uppercase">
               Frequently Asked Questions
             </h4>
@@ -98,7 +98,7 @@ export default function MasteringPage() {
             <div className="md:text-3xl text-xl flex flex-col gap-5">
               <b>How should I prepare my tracks before uploading?</b>
               <p>For optimal results, follow these 3 steps:</p>
-              <ol className="list-decimal flex flex-col p-10">
+              <ol className="list-decimal flex flex-col p-8">
                 <li>Make sure your mix doesn&apos;t peak above 0dBFS.</li>
                 <li>
                   Remove all limiters and other mastering plugins from your

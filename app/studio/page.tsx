@@ -5,7 +5,7 @@ export default function StudioPage() {
     <div className="pb-16 pt-32">
       <section className="flex w-full justify-center">
         <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
-          <h1 className="md:text-6xl text-4xl font-light">Studio</h1>
+          <h1 className="md:text-6xl text-4xl font-light pb-16">Studio</h1>
           <p className="md:text-3xl text-xl">
             Our studio is the beating heart of everything we do.
           </p>
