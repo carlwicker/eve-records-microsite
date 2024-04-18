@@ -2,11 +2,11 @@ export default function AboutPage() {
   return (
     <div className="py-32">
       <section className="flex w-full justify-center">
-        <div className="w-2/3  align-middle flex flex-col self-center gap-8">
-          <h1 className="text-6xl font-bold uppercase">
+        <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
+          <h1 className="lg:text-6xl text-4xl font-bold uppercase">
             Redefining the Sound of Tomorrow
           </h1>
-          <p className="text-3xl">
+          <p className="md:text-3xl text-xl">
             Embark on an unparalleled journey through the pulsating realms of
             electronic music with us. Beyond being a record label, we are a
             multifaceted powerhouse, encompassing record labels, a pioneering
@@ -20,7 +20,7 @@ export default function AboutPage() {
             </a>
             , and comprehensive consultancy services.
           </p>
-          <p className="text-3xl">
+          <p className="md:text-3xl text-xl">
             Our commitment to excellence extends to artist management and
             top-tier recording and mastering facilities, ensuring every sonic
             creation reaches its fullest potential. With a focus on innovation

@@ -5,13 +5,15 @@ export default function MasteringPage() {
     <div className="py-32">
       <section className="flex w-full justify-center flex-col">
         <div className="xl:w-2/3 w-full align-middle flex flex-col self-center gap-8">
-          <h1 className="text-6xl font-bold uppercase">Mastering</h1>
+          <h1 className="lg:text-6xl text-4xl font-bold uppercase">
+            Mastering
+          </h1>
 
-          <p className="text-3xl">
+          <p className="md:text-3xl text-xl">
             Get a free preview of your mastered track...
           </p>
 
-          <div className="pt-40">
+          <div className="md:pt-40 pt-20">
             <iframe
               title="mastering"
               style={{
@@ -25,7 +27,7 @@ export default function MasteringPage() {
             ></iframe>
           </div>
 
-          <div className="flex flex-col gap-12 items-center py-40 md:text-2xl text-xl text-center">
+          <div className="flex flex-col gap-12 items-center md:py-40 py-20 md:text-2xl text-xl text-center">
             <h2 className="font-bold text-4xl uppercase ">
               Why master your music?
             </h2>
