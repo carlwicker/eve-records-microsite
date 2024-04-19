@@ -16,7 +16,7 @@ export default function AboutPage() {
               target="_blank"
               className="hover:text-red-600 transition text-red-500 duration-100 ease-in-out"
             >
-              online record store
+              online MP3/WAV store
             </a>
             , and comprehensive consultancy services.
           </p>

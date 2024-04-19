@@ -141,7 +141,7 @@ export default function MasteringPage() {
                 For any questions specific to mastering, please contact{" "}
                 <a
                   href="mailto:recoverworld-support@masterchannel.ai"
-                  className="hover:text-red-500 transition text-red-400 duration-100 ease-in-out"
+                  className="hover:text-red-600 transition text-red-500 duration-100 ease-in-out"
                 >
                   recoverworld-support@masterchannel.ai
                 </a>
