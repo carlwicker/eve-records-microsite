@@ -85,3 +85,12 @@ html.has-scroll-dragging {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.back {
+  background-image: "../img/black.jpg";
+  object-fit: "cover";
+  background-size: "cover";
+  background-repeat: "no-repeat";
+  background-attachment: "fixed";
+  background-position: "center";
+}

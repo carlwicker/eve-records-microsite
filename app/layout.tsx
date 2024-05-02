@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
+import { url } from "inspector";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "700"] });
 
